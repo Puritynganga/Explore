@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <style>
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        font-style: sans-serif;
+      }
+      h1 {
+        color: blue;
+        font-size: 28px;
+        line-height: 40px;
+        margin: 0;
+      }
+      h2 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 300px;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px auto;
+        margin: 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      li:hover {
+        background: pink;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 0.5px solid blue;
+        background: blue;
+        color: #fff;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 12px 18px;
+        border-radius: 24px;
+        transition: all 200ms ease-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #fff;
+        color: blue;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌥️<br />
+      Currently 21&deg;in Tokyo
+    </h1>
+    <h2>13&deg;/<strong>23&deg;</strong></h2>
+    <ul>
+      <li>
+        <h3>🌨️ Tomorrow</h3>
+        <p>10&deg;/22&deg;</p>
+      </li>
+      <li>
+        <h3>🌥️ Saturday</h3>
+        <p>15&deg;/17&deg;</p>
+      </li>
+      <li>
+        <h3>☀️Sunday</h3>
+        <p>25&deg;/28&deg;</p>
+      </li>
+    </ul>
+    <button>Change City</button>
+    <p>Coded by Purity</p>
+    <script>
+      function changeCity() {
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        let heading = document.querySelector("h1");
+        if (temperature < 0) {
+          heading.innerHTML =
+            "🥶<br/> Currently" + temperature + "°C in" + city;
+        } else {
+          heading.innerHTML =
+            "😃<br/> Currently" + temperature + "°C in" + city;
+        }
+      }
+
+      let changeButton = document.querySelector("button");
+      changeButton = document.addEventListener("click", changeCity);
+    </script>
+  </body>
+</html>

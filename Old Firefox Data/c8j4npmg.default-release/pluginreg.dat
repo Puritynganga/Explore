@@ -1,0 +1,21 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.19t|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+
+[INVALID]
+C:\Program Files (x86)\VideoLAN\VLC\npvlc.dll|$
+1591284988000|$
+C:\Program Files (x86)\AVAST Software\Browser\Update\1.8.1065.0\npAvastBrowserUpdate3.dll|$
+1604218172995|$
+C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AIR\nppdf32.dll|$
+1443109232000|$
+C:\PROGRA~2\MICROS~1\Office16\NPSPWRAP.DLL|$
+1438361800000|$
+C:\Program Files (x86)\Mozilla Firefox\plugins\nppdf32.dll|$
+1443109232000|$
+C:\Program Files (x86)\Mozilla Firefox\plugins\npMeetingJoinPluginOC.dll|$
+1491914172000|$
